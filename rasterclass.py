@@ -22,7 +22,7 @@ def readfile():
         item = re.findall(r'\d+', item)
         for j, one in enumerate(item):
             npdata[i][j] = int(one)
-    return (npdata)
+    return npdata
 
 def AddRound(npgrid):
     nx, ny = npgrid.shape[0], npgrid.shape[1]
